@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import TemperatureCalculator from './temperatureCalculator/TemperatureCalculator'
+import Clock from './time/Clock'
+import Timer from './time/Timer'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TemperatureCalculator />
+      <Clock/>
+      <Timer/>      
     </div>
   );
 }
